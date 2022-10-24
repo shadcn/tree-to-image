@@ -85,13 +85,19 @@ export default function Home() {
               </Link>
             </span>
           </h1>
-          <p>
+          <div className="flex items-center gap-2">
             <Link href="https://twitter.com/shadcn" passHref>
               <a className="text-sm font-medium" target="_blank">
                 @shadcn
               </a>
             </Link>
-          </p>
+            <span>&middot;</span>
+            <Link href="http://github.com/shadcn/tree-to-image" passHref>
+              <a className="text-sm font-medium" target="_blank">
+                GitHub
+              </a>
+            </Link>
+          </div>
         </header>
         <div className="grid items-start lg:grid-cols-[1fr_768px] gap-10">
           <form onSubmit={onSubmit} className="grid items-start gap-2">
